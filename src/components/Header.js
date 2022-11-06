@@ -34,12 +34,15 @@ const Header = () => {
                   <p>Returns</p>
                   <p className="font-extrabold md:text-sm">& Orders</p>
                </div>
-               <div className="link">
+               <div className="relative link flex items-center">
+                  <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 rounded-full text-center text-black font-bold">0</span>
                   <ShoppingCartIcon className="h-10" />
-                  <p className="font-extrabold md:text-sm">Basket</p>
+                  <p className="hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
                </div>
             </div>
          </div>
+
+         <div></div>
       </header>
    )
 }
