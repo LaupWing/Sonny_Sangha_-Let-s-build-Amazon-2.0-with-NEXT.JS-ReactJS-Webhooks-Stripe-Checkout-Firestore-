@@ -19,24 +19,24 @@ const Header = () => {
                />
             </div>
             <button className="bg-yellow-400 flex-grow h-10 rounded-md hidden sm:flex hover:bg-yellow-500 items-center">
-               <input 
-                  type="text" 
+               <input
+                  type="text"
                   className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"
                />
-               <MagnifyingGlassIcon className="h-12 p-4 "/>
+               <MagnifyingGlassIcon className="h-12 p-4 " />
             </button>
-            <div className="text-white flex space-x-6 mx-6">
-               <div>
+            <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
+               <div className="link">
                   <p>Hello Sonny Sangha</p>
-                  <p>Account & Lists</p>
+                  <p className="font-extrabold md:text-sm">Account & Lists</p>
                </div>
-               <div>
+               <div className="link">
                   <p>Returns</p>
-                  <p>& Orders</p>
+                  <p className="font-extrabold md:text-sm">& Orders</p>
                </div>
-               <div>
-                  <ShoppingCartIcon className="h-10"/>
-                  <p>Basket</p>
+               <div className="link">
+                  <ShoppingCartIcon className="h-10" />
+                  <p className="font-extrabold md:text-sm">Basket</p>
                </div>
             </div>
          </div>
