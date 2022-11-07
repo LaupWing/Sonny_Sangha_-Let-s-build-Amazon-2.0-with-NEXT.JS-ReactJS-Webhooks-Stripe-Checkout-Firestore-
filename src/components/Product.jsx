@@ -19,6 +19,7 @@ const Product = ({ id, title, price, description, category, image }) => {
             width={200}
             objectFit="contain"
          />
+         <h4>{title}</h4>
          <div className="flex">
             {Array(rating)
                .fill()
@@ -29,7 +30,13 @@ const Product = ({ id, title, price, description, category, image }) => {
                   />
                ))}
          </div>
-         <h4>{title}</h4>
+
+         {hasPrime && <p>Has prime delivery</p>}
+         <p>{description}</p>
+
+         <div>
+
+         </div>
       </div>
    )
 }
