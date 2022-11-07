@@ -2,8 +2,11 @@ import { StarIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 import React, { useState } from 'react'
 
+const MAX_RATING = 5
+const MIN_RATING = 1
+
 const Product = ({ id, title, price, description, category, image }) => {
-   const [rating] = useState(2)
+   const [rating] = useState(Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1))) + MIN_RATING
 
    return (
       <div>
