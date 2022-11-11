@@ -15,12 +15,12 @@ const ProductFeed = ({ products }) => {
                image={image}
             />
          ))}
-         <img
+         {/* <img
             className="md:col-span-full"
             src="https://links.papareact.com/dyz"
             alt=""
-         />
-         <div className="md:col-span-2">
+         /> */}
+         {/* <div className="md:col-span-2">
             {products.slice(4, 5).map(({ id, title, price, description, category, image }) => (
                <Product
                   key={id}
@@ -43,7 +43,7 @@ const ProductFeed = ({ products }) => {
                category={category}
                image={image}
             />
-         ))}
+         ))} */}
       </div>
    )
 }
